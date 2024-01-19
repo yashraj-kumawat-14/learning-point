@@ -9,7 +9,7 @@ function printt(){
 }
 echo "value of a is $a";
 printt();
-echo "value of a is $a";
+echo "value of a is $a </br>";
 ?>
 <?php
 echo $a;

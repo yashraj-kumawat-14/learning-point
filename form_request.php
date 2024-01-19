@@ -48,8 +48,19 @@
       </div>
     </div>
   </nav>
+  <?php
+  if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $a = $_POST['email'];
+    $b = $_POST["password"];
+    $c = $_POST['check'];
+    echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  }
+  ?>
   <div class="container">
-    <form action="daDDtahandle/backend.php" method="post">
+    <form action="datahandle/backe2nd.php" method="post">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
